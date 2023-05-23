@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+}
+@layer components {
+    .menuLink {
+        @apply font-semibold text-[16px] capitalize duration-100 ease-in hover:text-[#FF9800];
+    }
+}
