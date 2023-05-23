@@ -3,10 +3,32 @@
 @tailwind utilities;
 
 @layer base {
-
+    body {
+        @apply tracking-tighter;
+    }
+    h1 {
+        @apply font-black text-center text-[34px] md:text-[80px];
+    }
+    h2{
+        @apply font-black text-center text-[30px] md:text-[45px];
+    }
+    button {
+        @apply capitalize px-[25px] py-3 rounded-[7px] bg-[#0F4C81] text-white flex flex-row justify-center hover:bg-[#FF9800] duration-100 ease-in tracking-normal flex-grow-0;
+    }
+    p {
+        @apply text-sm;
+    }
 }
 @layer components {
     .menuLink {
-        @apply font-semibold text-[16px] capitalize duration-100 ease-in hover:text-[#FF9800];
+        @apply font-semibold text-[16px] capitalize duration-100 ease-in hover:text-[#FF9800] tracking-normal;
+    }
+    .btn-hero {
+        @apply font-semibold text-[18px] bg-white text-gray-900 py-[10px] px-10 rounded-[7px] duration-100 ease-out;
+        box-shadow: 0px 0px 40px rgba(255, 152, 0, 0.4);
+    }
+    .btn-hero:hover{
+        background: linear-gradient(45deg, #FF9800, #8BC34A);
+        @apply text-white border-0;
     }
 }

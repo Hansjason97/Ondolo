@@ -8,16 +8,16 @@ function Navbar() {
   const [mobile, setMobile] = useState(false);
 
   return (
-    <div>
+    <div className=' sticky top-0 z-10 bg-white/80'>
       {/**Menu */}
       <div className='max-w-[1560px] mx-auto py-3 px-5 md:px-0 flex justify-between items-center'>
         <Link to="/"><img src={logo} alt="Logo Ondolo" className='h-8 md:h-10' /></Link>
         <GiHamburgerMenu className=' md:hidden cursor-pointer' size={24} onClick={() => setMobile(!mobile)} />
-        <nav className='hidden md:flex flex-row gap-[50px]'>
+        <nav className='hidden md:flex flex-row gap-[50px] items-center'>
           <NavLink to="/services" className={({ isActive }) => isActive ? 'menuLink text-[#FF9800]' : 'menuLink'} >services</NavLink>
           <NavLink to="/réalisations" className={({ isActive }) => isActive ? 'menuLink text-[#FF9800]' : 'menuLink'} >Réalisations</NavLink>
           <NavLink to="/articles" className={({ isActive }) => isActive ? 'menuLink text-[#FF9800]' : 'menuLink'} >articles</NavLink>
-          <NavLink to="/contact" className={({ isActive }) => isActive ? 'menuLink text-[#FF9800]' : 'menuLink'} >contact</NavLink>
+          <NavLink to="/contact" ><button>contact</button></NavLink>
         </nav>
 
         {/*Mobile Menu*/}
