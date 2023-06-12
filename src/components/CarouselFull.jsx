@@ -22,10 +22,11 @@ function CarouselFull() {
     setCurrentIndex(slideIndex);
   }
 
-  const autoplay = () => {
-    currentIndex === carousel.length - 1 ? setCurrentIndex(0) : setCurrentIndex(currentIndex + 1);
-  }
+  
   useEffect(() => {
+    const autoplay = () => {
+        currentIndex === carousel.length - 1 ? setCurrentIndex(0) : setCurrentIndex(currentIndex + 1);
+      }
     const intervalId = setInterval(autoplay, 3500);
     return () => {
         clearInterval(intervalId);
