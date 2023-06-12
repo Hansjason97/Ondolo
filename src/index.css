@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-    body {
+    p {
         @apply tracking-tighter text-base;
     }
     h1 {
@@ -20,6 +20,9 @@
     }
     button {
         @apply w-fit px-10 py-[10px] bg-primary text-white tracking-normal mx-auto font-semibold duration-200 ease-in-out hover:bg-secondary hover:text-primary;
+    }
+    h4 {
+        @apply w-fit text-center font-bold text-2xl tracking-[0.2em] uppercase before:content-[''] before:w-10 before:h-1 before:bg-secondary before:block before:mb-2 before:mx-auto;
     }
 }
 @layer components {
