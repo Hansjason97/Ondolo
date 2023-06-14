@@ -56,8 +56,8 @@ function CarouselFull() {
         {/**Content */}
         <div className='absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] max-w-7xl w-full'>
           <div className='p-2 md:px-2 md:py-12 w-full text-center flex flex-col gap-4 text-white'>
-            <h3 className='uppercase'>votre agence</h3>
             <h1 className='text-center'>{carousel[currentIndex].title}</h1>
+            <p className='px-4'>Welcome to Ondolo, your one-stop-shop for web development, design, and support services. We are a team of experienced professionals dedicated to delivering high-quality solutions that meet the unique needs of our clients.</p>
             <button className='mt-8'><Link to={carousel[currentIndex].link}>En savoir plus</Link></button>
           </div>
         </div>

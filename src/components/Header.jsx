@@ -23,10 +23,10 @@ function Header() {
             <div className={`max-w-7xl px-2 py-2 xl:px-0 mx-auto flex justify-between items-center ${visible ? 'bg-white' : ''}`}>
                 <Link to="/"><img src={visible ? logoAlt : logo} alt="" className='h-7'/></Link>
                 <nav className='hidden md:flex tracking-normal'>
-                    <NavLink to="/" className={({isActive}) => isActive ? 'menu-desktop-active' : 'menu-desktop'}>accueil</NavLink>
-                    <NavLink to="/services" className={({isActive}) => isActive ? 'menu-desktop-active' : 'menu-desktop'}>services</NavLink>
-                    <NavLink to="/realisations" className={({isActive}) => isActive ? 'menu-desktop-active' : 'menu-desktop'}>réalisations</NavLink>
-                    <NavLink to="/articles" className={({isActive}) => isActive ? 'menu-desktop-active' : 'menu-desktop'}>articles</NavLink>
+                    <NavLink to="/" className={({isActive}) => isActive ? 'menu-desktop-active' : 'menu-desktop'}>home</NavLink>
+                    <NavLink to="/web-dev" className={({isActive}) => isActive ? 'menu-desktop-active' : 'menu-desktop'}>web development</NavLink>
+                    <NavLink to="/design" className={({isActive}) => isActive ? 'menu-desktop-active' : 'menu-desktop'}>design</NavLink>
+                    <NavLink to="/support" className={({isActive}) => isActive ? 'menu-desktop-active' : 'menu-desktop'}>support</NavLink>
                     <NavLink to="/contact" className={({isActive}) => isActive ? 'menu-desktop-active' : 'menu-desktop'}>contact</NavLink>
                 </nav>
                 <div className={`flex p-4 md:hidden cursor-pointer ${visible ? '' : 'text-white'}`} onClick={mobileMenu}>
@@ -39,10 +39,10 @@ function Header() {
         {/**Mobile menu */}
             <div className={`absolute top-[72px] w-full left-0 z-10 duration-200 transition-all ${visible ? 'max-h-[80px] opacity-100' : 'max-h-0 opacity-0'}`} onClick={mobileMenu}>
                 <nav className='flex flex-col md:hidden w-full'>
-                <NavLink to="/" className="menu-mobile">accueil</NavLink>
-                    <NavLink to="/services" className="menu-mobile">services</NavLink>
-                    <NavLink to="/realisations" className="menu-mobile">réalisations</NavLink>
-                    <NavLink to="/articles" className="menu-mobile">articles</NavLink>
+                    <NavLink to="/" className="menu-mobile">home</NavLink>
+                    <NavLink to="/web-dev" className="menu-mobile">web development</NavLink>
+                    <NavLink to="/design" className="menu-mobile">design</NavLink>
+                    <NavLink to="/support" className="menu-mobile">support</NavLink>
                     <NavLink to="/contact" className="menu-mobile">contact</NavLink>
                 </nav>
             </div>
